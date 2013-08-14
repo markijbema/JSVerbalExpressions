@@ -119,7 +119,7 @@ test( "br", function() {
     var testRegex;
     var testString;
 
-    testRegex = VerEx().startOfLine().then( "abc" ).lineBreak().then( "def" );
+    testRegex = VerEx().startOfLine().then( "abc" ).br().then( "def" );
     testString = "abc\r\ndef";
     ok( testRegex.test( testString ), "abc then line break then def" );
 
